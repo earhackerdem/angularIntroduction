@@ -3,6 +3,11 @@
 <button (click)="toggleButton()" >Toggle button</button>
 <p>Age {{ person.age }} </p>
 <button (click)="increaseAge()"> Age++ </button>
+<div class="box" (scroll)="onScroll($event)" >
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse suscipit odio dolore consectetur, doloribus nisi eos odit dicta quia obcaecati debitis provident nemo totam, earum in vel quod! Provident, saepe.</p>
+</div>
+<p>Name {{ person.name }} </p>
+<input type="text" [value]="person.name" (keyup)="changeName($event)">
 <hr>
 <h1>Properties</h1>
 <button [disabled]="btnDisabled"> Send</button>
