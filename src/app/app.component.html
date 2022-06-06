@@ -1,3 +1,27 @@
+<h1>*ngSwitch</h1>
+
+<input type="text" required [(ngModel)]="person.name">
+<div [ngSwitch]="person.name">
+
+  <p *ngSwitchCase="'saul'">
+    The person is Saul
+  </p>
+
+  <p *ngSwitchCase="'mike'">
+    The person it Mike
+  </p>
+
+  <p *ngSwitchCase="'earvin'">
+    The person is Earvin
+  </p>
+
+  <p *ngSwitchDefault>
+    There is no match
+  </p>
+
+</div>
+
+
 <h1>*ngFor Objs</h1>
 
 <div>
