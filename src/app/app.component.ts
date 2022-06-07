@@ -8,6 +8,11 @@ import { Product } from './product.model';
 export class AppComponent {
   widthImg = 10;
   name = 'saul';
+  box = {
+    width: 100,
+    height: 100,
+    background: 'red'
+  };
   age = 25;
   img = "https://source.unsplash.com/random";
   btnDisabled = true;
